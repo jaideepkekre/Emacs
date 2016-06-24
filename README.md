@@ -7,8 +7,8 @@
 * projectile
 * elpy
 * neotree
-* ido
-* ido vertical mode
+* ido 
+* ido vertical mode + ido M-X trigger
 * 
 
 ### Linux Binaries :
@@ -27,4 +27,5 @@
 * *https://github.com/emacs-tw/awesome-emacs*
 * https://www.emacswiki.org/emacs/InteractivelyDoThings
 * https://github.com/creichert/ido-vertical-mode.el
+* https://www.emacswiki.org/emacs/InteractivelyDoThings
 
