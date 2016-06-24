@@ -7,6 +7,9 @@
 * projectile
 * elpy
 * neotree
+* ido
+* ido vertical mode
+* 
 
 ### Linux Binaries :
 * flake8 for code checks :                      `pip install flake8`
@@ -21,4 +24,7 @@
 * https://github.com/jorgenschaefer/elpy
 * https://github.com/bbatsov/prelude#installation
 * http://blog.gabrielsaldana.org/3-methods-on-how-to-backup-your-emacs-file/
+* *https://github.com/emacs-tw/awesome-emacs*
+* https://www.emacswiki.org/emacs/InteractivelyDoThings
+* https://github.com/creichert/ido-vertical-mode.el
 
