@@ -9,6 +9,7 @@
 * neotree
 * ido 
 * ido vertical mode + ido M-X trigger
+* autopep8
 * 
 
 ### Linux Binaries :
