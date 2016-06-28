@@ -1,4 +1,33 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;JAIDEEP KEKRE;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;INSTALL PACKAGES
+(require 'package)
+
+
+
+(package-initialize)
+(when (not package-archive-contents)
+  (package-refresh-contents))
+
+(defvar myPackages
+  '(elpy
+    jedi
+    ido
+    ido-vertical-mode
+    elpy
+    monokai-theme
+    neotree	
+    flycheck
+    material-theme
+    py-autopep8))
+
+(mapc #'(lambda (package)
+    (unless (package-installed-p package)
+      (package-install package)))
+      myPackages)
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;DISPLAY LINE NUMBERS
 (global-linum-mode t)
 
