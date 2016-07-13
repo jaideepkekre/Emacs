@@ -10,7 +10,7 @@
 
 (defvar myPackages
   '(elpy
-    jedi
+    company-jedi
     ido
     ido-vertical-mode
     elpy
@@ -33,14 +33,14 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;AUTO COMPLETE
-(require 'auto-complete-config)
-(ac-config-default)
-(setq ac-show-menu-immediately-on-auto-complete)
+;;(require 'auto-complete-config)
+;;(ac-config-default)
+;;(setq ac-show-menu-immediately-on-auto-complete)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;JEDI
-(require 'jedi)
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+;;(require 'jedi)
+;;(add-hook 'python-mode-hook 'jedi:setup)
+;;(setq jedi:complete-on-dot t)
 
 (add-hook 'after-init-hook 'global-company-mode)
 (defun my/python-mode-hook ()
