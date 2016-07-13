@@ -2,8 +2,6 @@
 ### My Emacs libs :
 * Prelude 
 * jedi 
-* EPC
-* autocomplete 
 * projectile
 * elpy
 * neotree
@@ -29,4 +27,6 @@
 * https://www.emacswiki.org/emacs/InteractivelyDoThings
 * https://github.com/creichert/ido-vertical-mode.el
 * https://www.emacswiki.org/emacs/InteractivelyDoThings
+* https://github.com/company-mode/company-mode/wiki/Switching-from-AC
+* https://github.com/syohex/emacs-company-jedi
 
