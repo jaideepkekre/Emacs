@@ -31,7 +31,11 @@
 ;;DISPLAY LINE NUMBERS
 (global-linum-mode t)
 
-
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;AUTO COMPLETE
+(require 'auto-complete-config)
+(ac-config-default)
+(setq ac-show-menu-immediately-on-auto-complete)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;JEDI
 (require 'jedi)
