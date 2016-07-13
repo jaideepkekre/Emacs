@@ -42,7 +42,13 @@
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
 
+(add-hook 'after-init-hook 'global-company-mode)
+(defun my/python-mode-hook ()
+  (add-to-list 'company-backends 'company-jedi))
 
+(company-quickhelp-mode 1)
+(add-hook 'python-mode-hook 'my/python-mode-hook)
+(add-hook 'python-mode-hook 'run-python-internal)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;NEOTREE
 (add-to-list 'load-path "/some/path/neotree")
