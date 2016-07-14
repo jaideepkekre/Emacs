@@ -9,11 +9,10 @@
   (package-refresh-contents))
 
 (defvar myPackages
-  '(elpy
+  '(
     company-jedi
     ido
     ido-vertical-mode
-    elpy
     monokai-theme
     neotree	
     flycheck
@@ -32,16 +31,7 @@
 (global-linum-mode t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;AUTO COMPLETE
-;;(require 'auto-complete-config)
-;;(ac-config-default)
-;;(setq ac-show-menu-immediately-on-auto-complete)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;JEDI
-;;(require 'jedi)
-;;(add-hook 'python-mode-hook 'jedi:setup)
-;;(setq jedi:complete-on-dot t)
-
+;;COMPANY-MODE
 (add-hook 'after-init-hook 'global-company-mode)
 (defun my/python-mode-hook ()
   (add-to-list 'company-backends 'company-jedi))
@@ -89,20 +79,13 @@
           (all-completions "" obarray 'commandp))))))
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;YASSNIPPET
-(define-key yas-minor-mode-map (kbd "<tab>") nil)
-(define-key yas-minor-mode-map (kbd "TAB") nil)
-(define-key yas-minor-mode-map (kbd "<C-tab>") 'yas-expand)
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;FLYCHECK
+(global-flycheck-mode)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;AUTOPEP8
-(require 'py-autopep8)
-(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
+(add-hook 'python-mode-hook 'py-autopep8-enable-on-save)
 
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;iBUFFER
 
