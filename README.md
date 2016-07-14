@@ -1,9 +1,8 @@
 # EmacsConfig
 ### My Emacs libs :
 * Prelude 
-* jedi 
+* company-jedi 
 * projectile
-* elpy
 * neotree
 * ido 
 * ido vertical mode + ido M-X trigger
